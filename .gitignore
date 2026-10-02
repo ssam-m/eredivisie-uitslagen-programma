@@ -1,0 +1,8 @@
+# Geheimen: NOOIT committen
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
