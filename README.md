@@ -33,3 +33,19 @@ python3 summarize.py
 
 Het script haalt de wedstrijden op (met `fetch_matches.py`) en laat Claude (`claude-sonnet-4-6`)
 er een luchtige samenvatting van 3-5 zinnen van maken.
+
+## Stap 3: e-mail via Resend (klaar)
+
+Zet in `.env` je Resend API key en het e-mailadres van je Resend-account:
+
+```
+RESEND_API_KEY=re_...
+EMAIL_TO=jouw@email.nl
+```
+
+```bash
+python3 send_email.py
+```
+
+Zonder eigen domein verstuurt Resend vanaf `onboarding@resend.dev`, en alleen naar
+het e-mailadres waarmee je je Resend-account hebt aangemaakt.
